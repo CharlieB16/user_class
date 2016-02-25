@@ -22,7 +22,27 @@
 				#(in this case, photos will be represented by strings like this: "img.jpg")
 
 
+class User
+	def initialize(email, birthday, password)
+		puts "Welcome!"
+		@email = email 
+		@birthdate = birthdate 
+		@password = password 
+	end 
 
+	def change_emai(email)
+		@email = email
+	end
+
+	def email
+	return @email
+
+	end
+
+end
+
+Charlie = User.new("email", "birthdate", "password")
+puts Charlie.email
 
 
 
